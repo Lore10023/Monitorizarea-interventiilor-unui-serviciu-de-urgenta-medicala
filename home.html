@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .center-buttons {
+            height: calc(100vh - 120px); /* calculeazã minus header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column; /* butoane unul sub altul */
+            gap: 15px;             /* spatiu intre butoane */
+            width: 300px;          /* toate butoanele aceeasi latime */
+        }
+
+        .btn-container button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #4e73df;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-container button:hover {
+            background-color: #3b5cb8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Monitorizarea interventiilor unui serviciu de urgenta medicala</h1>
+</header>
+
+<div class="center-buttons">
+    <div class="btn-container">
+        <button>Procedura</button>
+        <button>Raport</button>
+        <button>Raport detaliat</button>
+        <button>Timp mediu de reactie pentru un pacient</button>
+        <button>Pacienti cu cele mai multe interventii</button>
+        <button>Afisare medic</button>
+    </div>
+</div>
+
+</body>
+</html>
